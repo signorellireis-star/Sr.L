@@ -153,7 +153,7 @@
         'TRANCE SESSIONS', 'UPLIFTING JOURNEY', 'PSYTRANCE VORTEX',
         'FULL ON ENERGY', 'TECH TRANCE IMPACT', 'PROGRESSIVE WAVES',
         'ELECTRO HOUSE VIBES', '121 SETS GRAVADOS', 'DOWNLOAD DIRETO MP3',
-        'FELIPE SIGNORELLI', '100% GRATUITO'
+        'SR.L', '100% GRATUITO'
       ];
 
       // Duplica para loop infinito fluído
@@ -433,7 +433,7 @@
 
           <div class="card__body">
             <h3 class="card__title">
-              <small>Felipe Signorelli</small>
+              <small>Sr.L</small>
               ${set.title}
             </h3>
 

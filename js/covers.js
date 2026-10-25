@@ -296,7 +296,7 @@
       ${title.length > 28 ? title.substring(0, 26) + '…' : title}
     </text>
     <text x="0" y="16" font-family="'Inter', sans-serif" font-weight="500" font-size="13" fill="#9aa3b8">
-      Felipe Signorelli <tspan fill="${c1}">·</tspan> ${dur}
+      Sr.L <tspan fill="${c1}">·</tspan> ${dur}
     </text>
   </g>
 </svg>`.trim();
