@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sr.L — Acervo de SETs de Música Eletrônica | Trance, Psy, Progressive</title>
+  <meta name="description" content="Sr.L (Felipe Signorelli): mais de 120 DJ sets de Trance, Uplifting, Psytrance, Full On, Progressive e Electro House. Ouça online e baixe grátis, set por set.">
+  <meta name="theme-color" content="#07080c">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sr.L — Acervo de DJ Sets">
+  <meta property="og:description" content="Mais de 120 sets de Trance, Psy, Progressive e Electro. Ouça e baixe grátis.">
+  <meta property="og:image" content="assets/hero/hero-club.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307080c'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' font-size='26' fill='%2322e4ff'%3ESr.L%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/hero/hero-club.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo" id="nav-logo" aria-label="Sr.L — início">Sr<span>.</span>L</a>
+    <nav class="nav__links" aria-label="Navegação principal">
+      <a href="#sobre" id="nav-sobre">Sobre</a>
+      <a href="#acervo" id="nav-acervo">Acervo</a>
+      <button class="nav__shuffle" id="nav-shuffle" type="button" aria-label="Tocar um set aleatório">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>
+        <span>Aleatório</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <img src="assets/hero/hero-club.jpg" alt="" class="hero__img">
+      </div>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <div class="hero__grain" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__kicker reveal">Electronic Sets Archive · Desde os anos de pista</p>
+        <h1 class="hero__title" id="hero-title" aria-label="Sr.L">
+          <span class="hero__letter" style="--i:0">S</span><span class="hero__letter" style="--i:1">r</span><span class="hero__letter hero__dot" style="--i:2">.</span><span class="hero__letter" style="--i:3">L</span>
+        </h1>
+        <p class="hero__subtitle reveal">Trance · Uplifting · Psy · Progressive · Electro<br><span>Ouça online e baixe grátis, set por set.</span></p>
+
+        <div class="hero__eq" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+
+        <div class="hero__cta reveal">
+          <a href="#acervo" class="btn btn--primary" id="hero-explore">
+            <span>Explorar o acervo</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          </a>
+          <button class="btn btn--ghost" id="hero-random" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            <span>Tocar set aleatório</span>
+          </button>
+        </div>
+
+        <dl class="hero__stats reveal">
+          <div><dt>Sets</dt><dd data-count="stat-sets">0</dd></div>
+          <div><dt>Horas de música</dt><dd data-count="stat-hours">0</dd></div>
+          <div><dt>Estilos</dt><dd data-count="stat-genres">0</dd></div>
+        </dl>
+      </div>
+
+      <a href="#sobre" class="hero__scroll" id="hero-scroll" aria-label="Rolar para baixo"><span></span></a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marquee-track"></div>
+    </div>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="about" id="sobre" aria-labelledby="about-title">
+      <div class="about__media reveal">
+        <img src="assets/hero/about-booth.jpg" alt="Mãos do DJ ajustando o mixer em uma cabine iluminada por luzes neon" loading="lazy" class="about__img">
+        <div class="about__badge">
+          <strong data-count="stat-sets-2">0</strong>
+          <span>sets gravados<br>ao longo dos anos</span>
+        </div>
+      </div>
+      <div class="about__text">
+        <p class="eyebrow reveal">A origem do nome</p>
+        <h2 class="about__title reveal" id="about-title">
+          <span class="morph" id="morph" aria-label="Signorelli vira Sr.L">
+            <span class="k">S</span><span>i</span><span>g</span><span>n</span><span>o</span><span class="k">r</span><span>e</span><span class="k">l</span><span>l</span><span>i</span>
+          </span>
+        </h2>
+        <p class="about__lead reveal">Fale <em>Signorelli</em> bem rápido. O que sobra é <strong>Sr.L</strong>.</p>
+        <p class="reveal">Sets de Trance, Uplifting, Psytrance, Full On, Progressive e Electro House que atravessaram anos de pista. Muitos já perderam a data — mas nenhum perdeu a energia.</p>
+        <p class="reveal">Aqui está tudo, sem cadastro e sem custo. Escolha um set, aperte play e, se curtir, leve com você.</p>
+        <ul class="about__features reveal">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Ouça direto no site</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Download individual em MP3</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/></svg>Tracklists sendo adicionadas</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ACERVO ============ -->
+    <section class="archive" id="acervo" aria-labelledby="archive-title">
+      <div class="archive__head">
+        <p class="eyebrow reveal">O acervo</p>
+        <h2 class="archive__title reveal" id="archive-title">Todos os <span class="grad">SETs</span></h2>
+      </div>
+
+      <div class="toolbar" id="toolbar">
+        <div class="toolbar__row">
+          <label class="search" for="search-input">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input type="search" id="search-input" placeholder="Buscar por nº, estilo, faixa da tracklist…" autocomplete="off">
+            <kbd>/</kbd>
+          </label>
+          <div class="select">
+            <label for="sort-select" class="sr-only">Ordenar</label>
+            <select id="sort-select">
+              <option value="num-desc">Mais novos (nº ↓)</option>
+              <option value="num-asc">Mais antigos (nº ↑)</option>
+              <option value="dur-desc">Mais longos</option>
+              <option value="dur-asc">Mais curtos</option>
+              <option value="shuffle">Embaralhar</option>
+            </select>
+          </div>
+        </div>
+        <div class="chips" id="genre-chips" role="group" aria-label="Filtrar por estilo"></div>
+      </div>
+
+      <p class="archive__count" id="results-count" aria-live="polite"></p>
+      <div class="grid" id="sets-grid"></div>
+      <div class="empty" id="empty-state" hidden>
+        <p>Nenhum set encontrado.</p>
+        <button class="btn btn--ghost" id="clear-filters" type="button">Limpar filtros</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="footer">
+    <div class="footer__logo">Sr<span>.</span>L</div>
+    <div class="footer__socials" id="footer-socials"></div>
+    <p class="footer__note">Sets mixados por Felipe Signorelli. Todas as faixas pertencem aos seus respectivos artistas e gravadoras.</p>
+    <p class="footer__copy">© <span id="year"></span> Sr.L · Feito com graves e madrugadas.</p>
+  </footer>
+
+  <!-- ============ PLAYER FIXO ============ -->
+  <aside class="player" id="player" aria-label="Player de áudio" hidden>
+    <div class="player__progress" id="player-progress" role="slider" aria-label="Progresso" tabindex="0" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <canvas id="player-wave"></canvas>
+    </div>
+    <div class="player__inner">
+      <div class="player__info">
+        <div class="player__cover" id="player-cover"></div>
+        <div class="player__meta">
+          <strong id="player-title">—</strong>
+          <span id="player-sub">—</span>
+        </div>
+      </div>
+
+      <div class="player__controls">
+        <button class="icon-btn" id="player-prev" type="button" aria-label="Set anterior">
+          <svg viewBox="0 0 24 24"><path d="M6 5v14M18 5 8 12l10 7z"/></svg>
+        </button>
+        <button class="icon-btn" id="player-back" type="button" aria-label="Voltar 30 segundos">
+          <svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8M3 3v5h5"/><text x="12" y="15.5" text-anchor="middle" font-size="7" font-weight="700" stroke="none" fill="currentColor">30</text></svg>
+        </button>
+        <button class="play-btn" id="player-toggle" type="button" aria-label="Tocar">
+          <svg class="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          <svg class="i-pause" viewBox="0 0 24 24"><path d="M7 5h3v14H7zM14 5h3v14h-3z"/></svg>
+          <span class="spinner" aria-hidden="true"></span>
+        </button>
+        <button class="icon-btn" id="player-fwd" type="button" aria-label="Avançar 30 segundos">
+          <svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-3-6.7L21 8M21 3v5h-5"/><text x="12" y="15.5" text-anchor="middle" font-size="7" font-weight="700" stroke="none" fill="currentColor">30</text></svg>
+        </button>
+        <button class="icon-btn" id="player-next" type="button" aria-label="Próximo set">
+          <svg viewBox="0 0 24 24"><path d="M18 5v14M6 5l10 7-10 7z"/></svg>
+        </button>
+      </div>
+
+      <div class="player__right">
+        <span class="player__time"><span id="player-current">0:00</span> / <span id="player-duration">0:00</span></span>
+        <label class="volume" for="player-volume">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9zM16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg>
+          <input type="range" id="player-volume" min="0" max="1" step="0.01" value="0.9" aria-label="Volume">
+        </label>
+        <a class="icon-btn" id="player-download" href="#" target="_blank" rel="noopener" aria-label="Baixar este set">
+          <svg viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+        </a>
+        <button class="icon-btn" id="player-close" type="button" aria-label="Fechar player">
+          <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="player__embed" id="player-embed" hidden></div>
+    <audio id="audio" preload="none"></audio>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/covers.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

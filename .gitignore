@@ -1,0 +1,14 @@
+# Arquivos temporários e do sistema
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# Mídias pesadas locais (os áudios ficam no Google Drive)
+*.mp3
+*.wav
+*.flac
+*.zip
+
+# Planilhas temporárias com tokens ou chaves
+*.csv

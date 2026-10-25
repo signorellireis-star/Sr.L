@@ -1,0 +1,2552 @@
+[
+    {
+        "number":  1,
+        "code":  "SET 01",
+        "title":  "Full On",
+        "fileName":  "SET 01 - Felipe Signorelli Full On.mp3",
+        "genres":  [
+                       "Full On"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "54m",
+        "durationRaw":  "00:54:18",
+        "bitrate":  "320 kbps",
+        "sizeMB":  125,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  2,
+        "code":  "SET 02",
+        "title":  "Full On",
+        "fileName":  "SET 02 - Felipe Signorelli Full On.mp3",
+        "genres":  [
+                       "Full On"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "49m",
+        "durationRaw":  "00:49:43",
+        "bitrate":  "320 kbps",
+        "sizeMB":  114,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  3,
+        "code":  "SET 03",
+        "title":  "Full On",
+        "fileName":  "SET 03 - Felipe Signorelli Full On.mp3",
+        "genres":  [
+                       "Full On"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "53m",
+        "durationRaw":  "00:53:47",
+        "bitrate":  "320 kbps",
+        "sizeMB":  124,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  4,
+        "code":  "SET 04",
+        "title":  "Progressive",
+        "fileName":  "SET 04 - Felipe Signorelli Progressive.mp3",
+        "genres":  [
+                       "Progressive"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "58m",
+        "durationRaw":  "00:58:15",
+        "bitrate":  "320 kbps",
+        "sizeMB":  135,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  5,
+        "code":  "SET 05",
+        "title":  "Minimal",
+        "fileName":  "SET 05 - Felipe Signorelli Minimal.mp3",
+        "genres":  [
+                       "Minimal"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "56m",
+        "durationRaw":  "00:56:49",
+        "bitrate":  "320 kbps",
+        "sizeMB":  131,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  6,
+        "code":  "SET 06",
+        "title":  "Nostalgia Full On",
+        "fileName":  "SET 06 - Felipe Signorelli Nostalgia Full On.mp3",
+        "genres":  [
+                       "Full On"
+                   ],
+        "tags":  [
+                     "Nostalgia"
+                 ],
+        "duration":  "1h 27m",
+        "durationRaw":  "01:27:11",
+        "bitrate":  "320 kbps",
+        "sizeMB":  201,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  7,
+        "code":  "SET 07",
+        "title":  "Full On",
+        "fileName":  "SET 07 - Felipe Signorelli Full On.mp3",
+        "genres":  [
+                       "Full On"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "57m",
+        "durationRaw":  "00:57:09",
+        "bitrate":  "320 kbps",
+        "sizeMB":  132,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  8,
+        "code":  "SET 08",
+        "title":  "Progressive",
+        "fileName":  "SET 08 - Felipe Signorelli Progressive.mp3",
+        "genres":  [
+                       "Progressive"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "43m",
+        "durationRaw":  "00:43:35",
+        "bitrate":  "320 kbps",
+        "sizeMB":  100,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  9,
+        "code":  "SET 09",
+        "title":  "Full On",
+        "fileName":  "SET 09 - Felipe Signorelli Full On.mp3",
+        "genres":  [
+                       "Full On"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "59m",
+        "durationRaw":  "00:59:05",
+        "bitrate":  "320 kbps",
+        "sizeMB":  136,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  10,
+        "code":  "SET 10",
+        "title":  "Electro-House",
+        "fileName":  "SET 10 - Felipe Signorelli Electro-House.mp3",
+        "genres":  [
+                       "Electro House"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 16m",
+        "durationRaw":  "01:16:03",
+        "bitrate":  "320 kbps",
+        "sizeMB":  176,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  11,
+        "code":  "SET 11",
+        "title":  "Trance",
+        "fileName":  "SET 11 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 17m",
+        "durationRaw":  "01:17:33",
+        "bitrate":  "320 kbps",
+        "sizeMB":  178,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  12,
+        "code":  "SET 12",
+        "title":  "Trance",
+        "fileName":  "SET 12 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "52m",
+        "durationRaw":  "00:52:12",
+        "bitrate":  "320 kbps",
+        "sizeMB":  120,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  13,
+        "code":  "SET 13",
+        "title":  "Full-On",
+        "fileName":  "SET 13 - Felipe Signorelli Full-On.mp3",
+        "genres":  [
+                       "Full On"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "51m",
+        "durationRaw":  "00:51:54",
+        "bitrate":  "320 kbps",
+        "sizeMB":  120,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  14,
+        "code":  "SET 14",
+        "title":  "Trance",
+        "fileName":  "SET 14 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 37m",
+        "durationRaw":  "01:37:11",
+        "bitrate":  "320 kbps",
+        "sizeMB":  224,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  15,
+        "code":  "SET 15",
+        "title":  "Trance",
+        "fileName":  "SET 15 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 17m",
+        "durationRaw":  "01:17:44",
+        "bitrate":  "320 kbps",
+        "sizeMB":  179,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  16,
+        "code":  "SET 16",
+        "title":  "Trance",
+        "fileName":  "SET 16 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 22m",
+        "durationRaw":  "01:22:24",
+        "bitrate":  "320 kbps",
+        "sizeMB":  189,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  17,
+        "code":  "SET 17",
+        "title":  "Uplifting Trance",
+        "fileName":  "SET 17 - Felipe Signorelli Uplifting Trance.mp3",
+        "genres":  [
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 00m",
+        "durationRaw":  "01:00:30",
+        "bitrate":  "320 kbps",
+        "sizeMB":  139,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  18,
+        "code":  "SET 18",
+        "title":  "Trance",
+        "fileName":  "SET 18 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "56m",
+        "durationRaw":  "00:56:12",
+        "bitrate":  "320 kbps",
+        "sizeMB":  129,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  19,
+        "code":  "SET 19",
+        "title":  "Trance",
+        "fileName":  "SET 19 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "58m",
+        "durationRaw":  "00:58:44",
+        "bitrate":  "320 kbps",
+        "sizeMB":  135,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  20,
+        "code":  "SET 20",
+        "title":  "Trance",
+        "fileName":  "SET 20 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "58m",
+        "durationRaw":  "00:58:46",
+        "bitrate":  "320 kbps",
+        "sizeMB":  135,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  21,
+        "code":  "SET 21",
+        "title":  "Trance",
+        "fileName":  "SET 21 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "53m",
+        "durationRaw":  "00:53:14",
+        "bitrate":  "320 kbps",
+        "sizeMB":  122,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  22,
+        "code":  "SET 22",
+        "title":  "Trance",
+        "fileName":  "SET 22 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "53m",
+        "durationRaw":  "00:53:58",
+        "bitrate":  "320 kbps",
+        "sizeMB":  125,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  23,
+        "code":  "SET 23",
+        "title":  "Trance",
+        "fileName":  "SET 23 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 02m",
+        "durationRaw":  "01:02:03",
+        "bitrate":  "320 kbps",
+        "sizeMB":  142,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  24,
+        "code":  "SET 24",
+        "title":  "Trance",
+        "fileName":  "SET 24 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 00m",
+        "durationRaw":  "01:00:13",
+        "bitrate":  "320 kbps",
+        "sizeMB":  138,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  25,
+        "code":  "SET 25",
+        "title":  "Electro-House",
+        "fileName":  "SET 25 - Felipe Signorelli Electro-House.mp3",
+        "genres":  [
+                       "Electro House"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 29m",
+        "durationRaw":  "01:29:09",
+        "bitrate":  "320 kbps",
+        "sizeMB":  206,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  26,
+        "code":  "SET 26",
+        "title":  "Trance",
+        "fileName":  "SET 26 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "55m",
+        "durationRaw":  "00:55:36",
+        "bitrate":  "320 kbps",
+        "sizeMB":  129,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  27,
+        "code":  "SET 27",
+        "title":  "Trance",
+        "fileName":  "SET 27 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "49m",
+        "durationRaw":  "00:49:43",
+        "bitrate":  "320 kbps",
+        "sizeMB":  115,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  28,
+        "code":  "SET 28",
+        "title":  "Trance",
+        "fileName":  "SET 28 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "59m",
+        "durationRaw":  "00:59:39",
+        "bitrate":  "320 kbps",
+        "sizeMB":  138,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  29,
+        "code":  "SET 29",
+        "title":  "Trance",
+        "fileName":  "SET 29 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 59m",
+        "durationRaw":  "01:59:08",
+        "bitrate":  "320 kbps",
+        "sizeMB":  275,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  30,
+        "code":  "SET 30",
+        "title":  "Trance",
+        "fileName":  "SET 30 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 11m",
+        "durationRaw":  "01:11:45",
+        "bitrate":  "320 kbps",
+        "sizeMB":  166,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  31,
+        "code":  "SET 31",
+        "title":  "Progressive Trance",
+        "fileName":  "SET 31 - Felipe Signorelli Progressive Trance.mp3",
+        "genres":  [
+                       "Progressive",
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 08m",
+        "durationRaw":  "01:08:16",
+        "bitrate":  "320 kbps",
+        "sizeMB":  158,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  32,
+        "code":  "SET 32",
+        "title":  "Trance",
+        "fileName":  "SET 32 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "57m",
+        "durationRaw":  "00:57:29",
+        "bitrate":  "320 kbps",
+        "sizeMB":  133,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  33,
+        "code":  "SET 33",
+        "title":  "Trance (Psy Style)",
+        "fileName":  "SET 33 - Felipe Signorelli Trance (Psy Style).mp3",
+        "genres":  [
+                       "Psytrance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 16m",
+        "durationRaw":  "01:16:49",
+        "bitrate":  "320 kbps",
+        "sizeMB":  176,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  34,
+        "code":  "SET 34",
+        "title":  "Trance",
+        "fileName":  "SET 34 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "58m",
+        "durationRaw":  "00:58:54",
+        "bitrate":  "320 kbps",
+        "sizeMB":  135,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  35,
+        "code":  "SET 35",
+        "title":  "Trance (Psy Style)",
+        "fileName":  "SET 35 - Felipe Signorelli Trance (Psy Style).mp3",
+        "genres":  [
+                       "Psytrance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "57m",
+        "durationRaw":  "00:57:21",
+        "bitrate":  "320 kbps",
+        "sizeMB":  132,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  36,
+        "code":  "SET 36",
+        "title":  "Electro-House",
+        "fileName":  "SET 36 - Felipe Signorelli Electro-House.mp3",
+        "genres":  [
+                       "Electro House"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "55m",
+        "durationRaw":  "00:55:24",
+        "bitrate":  "320 kbps",
+        "sizeMB":  128,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  37,
+        "code":  "SET 37",
+        "title":  "Trance",
+        "fileName":  "SET 37 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 00m",
+        "durationRaw":  "01:00:13",
+        "bitrate":  "320 kbps",
+        "sizeMB":  138,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  38,
+        "code":  "SET 38",
+        "title":  "Trance",
+        "fileName":  "SET 38 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 05m",
+        "durationRaw":  "01:05:50",
+        "bitrate":  "320 kbps",
+        "sizeMB":  151,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  39,
+        "code":  "SET 39",
+        "title":  "Electro-House",
+        "fileName":  "SET 39 - Felipe Signorelli Electro-House.mp3",
+        "genres":  [
+                       "Electro House"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "59m",
+        "durationRaw":  "00:59:13",
+        "bitrate":  "320 kbps",
+        "sizeMB":  136,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  40,
+        "code":  "SET 40",
+        "title":  "Trance",
+        "fileName":  "SET 40 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "56m",
+        "durationRaw":  "00:56:53",
+        "bitrate":  "320 kbps",
+        "sizeMB":  131,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  41,
+        "code":  "SET 41",
+        "title":  "Trance (Psy Style)",
+        "fileName":  "SET 41 - Felipe Signorelli Trance (Psy Style).mp3",
+        "genres":  [
+                       "Psytrance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "53m",
+        "durationRaw":  "00:53:44",
+        "bitrate":  "320 kbps",
+        "sizeMB":  123,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  42,
+        "code":  "SET 42",
+        "title":  "Protoculture Tribute",
+        "fileName":  "SET 42 - Felipe Signorelli Protoculture Tribute.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+                     "Tribute"
+                 ],
+        "duration":  "1h 17m",
+        "durationRaw":  "01:17:33",
+        "bitrate":  "320 kbps",
+        "sizeMB":  178,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  43,
+        "code":  "SET 43",
+        "title":  "Electro-House",
+        "fileName":  "SET 43 - Felipe Signorelli Electro-House 320kbps.mp3",
+        "genres":  [
+                       "Electro House"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "59m",
+        "durationRaw":  "00:59:53",
+        "bitrate":  "320 kbps",
+        "sizeMB":  137,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  44,
+        "code":  "SET 44",
+        "title":  "Trance (Prog-Psy-Uplif)",
+        "fileName":  "SET 44 - Felipe Signorelli Trance (Prog-Psy-Uplif).mp3",
+        "genres":  [
+                       "Progressive",
+                       "Psytrance",
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "59m",
+        "durationRaw":  "00:59:09",
+        "bitrate":  "320 kbps",
+        "sizeMB":  136,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  45,
+        "code":  "SET 45",
+        "title":  "Selected Mix",
+        "fileName":  "SET 45 - Felipe Signorelli.mp3",
+        "genres":  [
+                       "Mix"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "39m",
+        "durationRaw":  "00:39:51",
+        "bitrate":  "320 kbps",
+        "sizeMB":  92,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  46,
+        "code":  "SET 46",
+        "title":  "Warm-UP Trance",
+        "fileName":  "SET 46 - Felipe Signorelli Warm-UP Trance .mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+                     "Warm-Up"
+                 ],
+        "duration":  "52m",
+        "durationRaw":  "00:52:00",
+        "bitrate":  "320 kbps",
+        "sizeMB":  119,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  47,
+        "code":  "SET 47",
+        "title":  "Psychedelic",
+        "fileName":  "SET 47 - Felipe Signorelli Psychedelic.mp3",
+        "genres":  [
+                       "Psytrance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "41m",
+        "durationRaw":  "00:41:52",
+        "bitrate":  "320 kbps",
+        "sizeMB":  96,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  48,
+        "code":  "SET 48",
+        "title":  "Uplifting Trance",
+        "fileName":  "SET 48 - Felipe Signorelli Uplifting Trance 320 Kbps.mp3",
+        "genres":  [
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "47m",
+        "durationRaw":  "00:47:12",
+        "bitrate":  "320 kbps",
+        "sizeMB":  108,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  49,
+        "code":  "SET 49",
+        "title":  "Trance",
+        "fileName":  "SET 49 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "43m",
+        "durationRaw":  "00:43:12",
+        "bitrate":  "320 kbps",
+        "sizeMB":  99,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  50,
+        "code":  "SET 50",
+        "title":  "Khomha Special Tech Trance",
+        "fileName":  "SET 50 - Felipe Signorelli Khomha Special Tech Trance.mp3",
+        "genres":  [
+                       "Tech Trance"
+                   ],
+        "tags":  [
+                     "Special"
+                 ],
+        "duration":  "1h 29m",
+        "durationRaw":  "01:29:29",
+        "bitrate":  "320 kbps",
+        "sizeMB":  205,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  51,
+        "code":  "SET 51",
+        "title":  "Trance",
+        "fileName":  "SET 51 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "42m",
+        "durationRaw":  "00:42:19",
+        "bitrate":  "320 kbps",
+        "sizeMB":  97,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  52,
+        "code":  "SET 52",
+        "title":  "Trance vs Electro",
+        "fileName":  "SET 52 - Felipe Signorelli Trance vs Electro.mp3",
+        "genres":  [
+                       "Trance",
+                       "Electro House"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "43m",
+        "durationRaw":  "00:43:53",
+        "bitrate":  "320 kbps",
+        "sizeMB":  101,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  53,
+        "code":  "SET 53",
+        "title":  "Psy Trance Style",
+        "fileName":  "SET 53 - Felipe Signorelli Psy Trance Style.mp3",
+        "genres":  [
+                       "Psytrance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "54m",
+        "durationRaw":  "00:54:45",
+        "bitrate":  "320 kbps",
+        "sizeMB":  126,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  54,
+        "code":  "SET 54",
+        "title":  "Trance",
+        "fileName":  "SET 54 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 00m",
+        "durationRaw":  "01:00:54",
+        "bitrate":  "320 kbps",
+        "sizeMB":  140,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  55,
+        "code":  "SET 55",
+        "title":  "Uplifting",
+        "fileName":  "SET 55 - Felipe Signorelli Uplifting.mp3",
+        "genres":  [
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "59m",
+        "durationRaw":  "00:59:26",
+        "bitrate":  "320 kbps",
+        "sizeMB":  136,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  56,
+        "code":  "SET 56",
+        "title":  "Warm-Up",
+        "fileName":  "SET 56 - Felipe Signorelli Warm-Up.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+                     "Warm-Up"
+                 ],
+        "duration":  "59m",
+        "durationRaw":  "00:59:23",
+        "bitrate":  "320 kbps",
+        "sizeMB":  137,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  57,
+        "code":  "SET 57",
+        "title":  "Trance",
+        "fileName":  "SET 57 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "53m",
+        "durationRaw":  "00:53:31",
+        "bitrate":  "320 kbps",
+        "sizeMB":  123,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  58,
+        "code":  "SET 58",
+        "title":  "Trance",
+        "fileName":  "SET 58 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 07m",
+        "durationRaw":  "01:07:51",
+        "bitrate":  "320 kbps",
+        "sizeMB":  156,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  59,
+        "code":  "SET 59",
+        "title":  "Underground",
+        "fileName":  "SET 59 - Felipe Signorelli Underground.mp3",
+        "genres":  [
+                       "Underground"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "58m",
+        "durationRaw":  "00:58:30",
+        "bitrate":  "320 kbps",
+        "sizeMB":  134,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  60,
+        "code":  "SET 60",
+        "title":  "Bonus 51 a 59",
+        "fileName":  "SET 60 - Felipe Signorelli Bonus 51 a 59.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+                     "Bonus"
+                 ],
+        "duration":  "1h 20m",
+        "durationRaw":  "01:20:12",
+        "bitrate":  "320 kbps",
+        "sizeMB":  184,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  61,
+        "code":  "SET 61",
+        "title":  "Trance",
+        "fileName":  "SET 61 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "54m",
+        "durationRaw":  "00:54:05",
+        "bitrate":  "320 kbps",
+        "sizeMB":  124,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  62,
+        "code":  "SET 62",
+        "title":  "Trance",
+        "fileName":  "SET 62 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 01m",
+        "durationRaw":  "01:01:03",
+        "bitrate":  "320 kbps",
+        "sizeMB":  140,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  63,
+        "code":  "SET 63",
+        "title":  "Trance",
+        "fileName":  "SET 63 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 00m",
+        "durationRaw":  "01:00:19",
+        "bitrate":  "320 kbps",
+        "sizeMB":  138,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  64,
+        "code":  "SET 64",
+        "title":  "Psylifting",
+        "fileName":  "SET 64 - Felipe Signorelli Psylifting.mp3",
+        "genres":  [
+                       "Psytrance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "59m",
+        "durationRaw":  "00:59:27",
+        "bitrate":  "320 kbps",
+        "sizeMB":  137,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  65,
+        "code":  "SET 65",
+        "title":  "Trance",
+        "fileName":  "SET 65 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "55m",
+        "durationRaw":  "00:55:08",
+        "bitrate":  "320 kbps",
+        "sizeMB":  127,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  66,
+        "code":  "SET 66",
+        "title":  "TranceProgStyle",
+        "fileName":  "SET 66 - Felipe Signorelli TranceProgStyle.mp3",
+        "genres":  [
+                       "Trance",
+                       "Progressive"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "56m",
+        "durationRaw":  "00:56:23",
+        "bitrate":  "320 kbps",
+        "sizeMB":  129,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  67,
+        "code":  "SET 67",
+        "title":  "Electro-House",
+        "fileName":  "SET 67 - Felipe Signorelli Electro-House.mp3",
+        "genres":  [
+                       "Electro House"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 08m",
+        "durationRaw":  "01:08:00",
+        "bitrate":  "320 kbps",
+        "sizeMB":  156,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  68,
+        "code":  "SET 68",
+        "title":  "Uplifting Trance",
+        "fileName":  "SET 68 - Felipe Signorelli Uplifting Trance.mp3",
+        "genres":  [
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 00m",
+        "durationRaw":  "01:00:05",
+        "bitrate":  "320 kbps",
+        "sizeMB":  138,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  69,
+        "code":  "SET 69",
+        "title":  "Trance",
+        "fileName":  "SET 69 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "52m",
+        "durationRaw":  "00:52:04",
+        "bitrate":  "320 kbps",
+        "sizeMB":  119,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  70,
+        "code":  "SET 70",
+        "title":  "Trance",
+        "fileName":  "SET 70 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "57m",
+        "durationRaw":  "00:57:35",
+        "bitrate":  "320 kbps",
+        "sizeMB":  133,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  71,
+        "code":  "SET 71",
+        "title":  "Beach Vol1",
+        "fileName":  "SET 71 - Felipe Signorelli Beach Vol1.mp3",
+        "genres":  [
+                       "House \u0026 Deep"
+                   ],
+        "tags":  [
+                     "Beach"
+                 ],
+        "duration":  "43m",
+        "durationRaw":  "00:43:07",
+        "bitrate":  "320 kbps",
+        "sizeMB":  99,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  72,
+        "code":  "SET 72",
+        "title":  "DEEP",
+        "fileName":  "SET 72 - Felipe Signorelli DEEP.mp3",
+        "genres":  [
+                       "House \u0026 Deep"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 20m",
+        "durationRaw":  "01:20:00",
+        "bitrate":  "320 kbps",
+        "sizeMB":  184,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  73,
+        "code":  "SET 73",
+        "title":  "Trance",
+        "fileName":  "SET 73 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "52m",
+        "durationRaw":  "00:52:39",
+        "bitrate":  "320 kbps",
+        "sizeMB":  123,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  74,
+        "code":  "SET 74",
+        "title":  "Psychedelic",
+        "fileName":  "SET 74 - Felipe Signorelli Psychedelic.mp3",
+        "genres":  [
+                       "Psytrance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "57m",
+        "durationRaw":  "00:57:01",
+        "bitrate":  "320 kbps",
+        "sizeMB":  131,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  75,
+        "code":  "SET 75",
+        "title":  "Trance",
+        "fileName":  "SET 75 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "46m",
+        "durationRaw":  "00:46:32",
+        "bitrate":  "320 kbps",
+        "sizeMB":  108,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  76,
+        "code":  "SET 76",
+        "title":  "Trance",
+        "fileName":  "SET 76 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "50m",
+        "durationRaw":  "00:50:15",
+        "bitrate":  "320 kbps",
+        "sizeMB":  118,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  77,
+        "code":  "SET 77",
+        "title":  "Uplifting Trance",
+        "fileName":  "SET 77 - Felipe Signorelli Uplifting Trance.mp3",
+        "genres":  [
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "47m",
+        "durationRaw":  "00:47:10",
+        "bitrate":  "320 kbps",
+        "sizeMB":  110,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  78,
+        "code":  "SET 78",
+        "title":  "Trance",
+        "fileName":  "SET 78 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "46m",
+        "durationRaw":  "00:46:28",
+        "bitrate":  "320 kbps",
+        "sizeMB":  107,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  79,
+        "code":  "SET 79",
+        "title":  "Psychedelic",
+        "fileName":  "SET 79 - Felipe Signorelli Psychedelic.mp3",
+        "genres":  [
+                       "Psytrance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "47m",
+        "durationRaw":  "00:47:37",
+        "bitrate":  "320 kbps",
+        "sizeMB":  109,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  80,
+        "code":  "SET 80",
+        "title":  "Trance",
+        "fileName":  "SET 80 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "43m",
+        "durationRaw":  "00:43:51",
+        "bitrate":  "320 kbps",
+        "sizeMB":  101,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  81,
+        "code":  "SET 81",
+        "title":  "Trance",
+        "fileName":  "SET 81 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "48m",
+        "durationRaw":  "00:48:56",
+        "bitrate":  "320 kbps",
+        "sizeMB":  113,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  82,
+        "code":  "SET 82",
+        "title":  "Beach Vol 2",
+        "fileName":  "SET 82 - Felipe Signorelli Beach Vol 2.mp3",
+        "genres":  [
+                       "House \u0026 Deep"
+                   ],
+        "tags":  [
+                     "Beach"
+                 ],
+        "duration":  "50m",
+        "durationRaw":  "00:50:27",
+        "bitrate":  "320 kbps",
+        "sizeMB":  118,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  83,
+        "code":  "SET 83",
+        "title":  "Trance",
+        "fileName":  "SET 83 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "51m",
+        "durationRaw":  "00:51:36",
+        "bitrate":  "320 kbps",
+        "sizeMB":  120,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  84,
+        "code":  "SET 84",
+        "title":  "Trance",
+        "fileName":  "SET 84 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "53m",
+        "durationRaw":  "00:53:47",
+        "bitrate":  "320 kbps",
+        "sizeMB":  124,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  85,
+        "code":  "SET 85",
+        "title":  "Psychedelic",
+        "fileName":  "SET 85 - Felipe Signorelli Psychedelic.mp3",
+        "genres":  [
+                       "Psytrance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "53m",
+        "durationRaw":  "00:53:16",
+        "bitrate":  "320 kbps",
+        "sizeMB":  123,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  86,
+        "code":  "SET 86",
+        "title":  "Trance",
+        "fileName":  "SET 86 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 02m",
+        "durationRaw":  "01:02:13",
+        "bitrate":  "320 kbps",
+        "sizeMB":  144,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  87,
+        "code":  "SET 87",
+        "title":  "Uplifting Trance",
+        "fileName":  "SET 87 - Felipe Signorelli Uplifting Trance.mp3",
+        "genres":  [
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "57m",
+        "durationRaw":  "00:57:16",
+        "bitrate":  "320 kbps",
+        "sizeMB":  131,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  88,
+        "code":  "SET 88",
+        "title":  "Progressive",
+        "fileName":  "SET 88- Felipe Signorelli Progressive.mp3",
+        "genres":  [
+                       "Progressive"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "53m",
+        "durationRaw":  "00:53:19",
+        "bitrate":  "320 kbps",
+        "sizeMB":  127,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  89,
+        "code":  "SET 89",
+        "title":  "Trance",
+        "fileName":  "SET 89- Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 02m",
+        "durationRaw":  "01:02:19",
+        "bitrate":  "320 kbps",
+        "sizeMB":  145,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  90,
+        "code":  "SET 90",
+        "title":  "Psychedelic",
+        "fileName":  "SET 90 - Felipe Signorelli Psychedelic.mp3",
+        "genres":  [
+                       "Psytrance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "58m",
+        "durationRaw":  "00:58:55",
+        "bitrate":  "320 kbps",
+        "sizeMB":  135,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  91,
+        "code":  "SET 91",
+        "title":  "Trance",
+        "fileName":  "SET 91 - Felipe Signorelli Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "58m",
+        "durationRaw":  "00:58:33",
+        "bitrate":  "320 kbps",
+        "sizeMB":  136,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  92,
+        "code":  "SET 92",
+        "title":  "Uplifting Trance",
+        "fileName":  "SET 92 - Felipe Signorelli Uplifting Trance.mp3",
+        "genres":  [
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 01m",
+        "durationRaw":  "01:01:42",
+        "bitrate":  "320 kbps",
+        "sizeMB":  142,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  93,
+        "code":  "SET 93",
+        "title":  "Uplifting Trance",
+        "fileName":  "SET 93 - Felipe Signorelli Uplifting Trance.mp3",
+        "genres":  [
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "50m",
+        "durationRaw":  "00:50:33",
+        "bitrate":  "320 kbps",
+        "sizeMB":  117,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  94,
+        "code":  "SET 94",
+        "title":  "Anjuna Style",
+        "fileName":  "SET 94 - Felipe Signorelli Anjuna Style.mp3",
+        "genres":  [
+                       "Progressive"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "48m",
+        "durationRaw":  "00:48:52",
+        "bitrate":  "320 kbps",
+        "sizeMB":  113,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  95,
+        "code":  "SET 95",
+        "title":  "Uplifting",
+        "fileName":  "SET 95 - Felipe Signorelli Uplifting.mp3",
+        "genres":  [
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "55m",
+        "durationRaw":  "00:55:24",
+        "bitrate":  "320 kbps",
+        "sizeMB":  129,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  96,
+        "code":  "SET 96",
+        "title":  "TechTrance",
+        "fileName":  "SET 96 - Felipe Signorelli TechTrance.mp3",
+        "genres":  [
+                       "Tech Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "49m",
+        "durationRaw":  "00:49:49",
+        "bitrate":  "320 kbps",
+        "sizeMB":  117,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  97,
+        "code":  "SET 97",
+        "title":  "Uplifting Trance",
+        "fileName":  "SET 97 - Felipe Signorelli Uplifting Trance.mp3",
+        "genres":  [
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "54m",
+        "durationRaw":  "00:54:33",
+        "bitrate":  "320 kbps",
+        "sizeMB":  133,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  98,
+        "code":  "SET 98",
+        "title":  "TechTrance",
+        "fileName":  "SET 98 - Felipe Signorelli TechTrance.mp3",
+        "genres":  [
+                       "Tech Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "49m",
+        "durationRaw":  "00:49:31",
+        "bitrate":  "320 kbps",
+        "sizeMB":  115,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  99,
+        "code":  "SET 99",
+        "title":  "Uplifting Trance",
+        "fileName":  "SET 99 - Felipe Signorelli Uplifting Trance.mp3",
+        "genres":  [
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 07m",
+        "durationRaw":  "01:07:57",
+        "bitrate":  "320 kbps",
+        "sizeMB":  156,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  100,
+        "code":  "SET 100",
+        "title":  "Trance Gostoso",
+        "fileName":  "SET 100 - Felipe Signorelli Trance Gostoso.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "46m",
+        "durationRaw":  "00:46:35",
+        "bitrate":  "320 kbps",
+        "sizeMB":  108,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  101,
+        "code":  "SET 101",
+        "title":  "Uplifting Trance",
+        "fileName":  "SET 101 - Felipe Signorelli Uplifting Trance.mp3",
+        "genres":  [
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "57m",
+        "durationRaw":  "00:57:11",
+        "bitrate":  "320 kbps",
+        "sizeMB":  132,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  102,
+        "code":  "SET 102",
+        "title":  "Psy Trance \u0026 Tech Trance",
+        "fileName":  "SET 102 - Felipe Signorelli Psy Trance \u0026 Tech Trance.mp3",
+        "genres":  [
+                       "Psytrance",
+                       "Tech Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "57m",
+        "durationRaw":  "00:57:31",
+        "bitrate":  "320 kbps",
+        "sizeMB":  134,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  103,
+        "code":  "SET 103",
+        "title":  "Uplifting Trance",
+        "fileName":  "SET 103 - Felipe Signorelli Uplifting Trance.mp3",
+        "genres":  [
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "55m",
+        "durationRaw":  "00:55:07",
+        "bitrate":  "320 kbps",
+        "sizeMB":  129,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  105,
+        "code":  "SET 105",
+        "title":  "Psychedelic Trance \u0026 Tech Trance",
+        "fileName":  "SET 105 - Felipe Signorelli Psychedelic Trance \u0026 Tech Trance.mp3",
+        "genres":  [
+                       "Psytrance",
+                       "Tech Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 17m",
+        "durationRaw":  "01:17:22",
+        "bitrate":  "320 kbps",
+        "sizeMB":  178,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  106,
+        "code":  "SET 106",
+        "title":  "Melodic Trance",
+        "fileName":  "SET 106 - Felipe Signorelli Melodic Trance.mp3",
+        "genres":  [
+                       "Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "49m",
+        "durationRaw":  "00:49:00",
+        "bitrate":  "320 kbps",
+        "sizeMB":  112,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  107,
+        "code":  "SET 107",
+        "title":  "Uplifting Trance",
+        "fileName":  "SET 107 - Felipe Signorelli Uplifting Trance.mp3",
+        "genres":  [
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "59m",
+        "durationRaw":  "00:59:21",
+        "bitrate":  "320 kbps",
+        "sizeMB":  136,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  108,
+        "code":  "SET 108",
+        "title":  "Uplifting Club \u0026 Trance",
+        "fileName":  "SET 108 - Felipe Signorelli Uplifting Club \u0026 Trance.mp3",
+        "genres":  [
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "59m",
+        "durationRaw":  "00:59:42",
+        "bitrate":  "320 kbps",
+        "sizeMB":  137,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  109,
+        "code":  "SET 109",
+        "title":  "TechTrance",
+        "fileName":  "SET 109 - Felipe Signorelli TechTrance.mp3",
+        "genres":  [
+                       "Tech Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "58m",
+        "durationRaw":  "00:58:32",
+        "bitrate":  "320 kbps",
+        "sizeMB":  134,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  110,
+        "code":  "SET 110",
+        "title":  "Felipe Signorell Uplifting \u0026 Hard",
+        "fileName":  "SET 110 - Felipe Signorell Uplifting \u0026 Hard.mp3",
+        "genres":  [
+                       "Uplifting Trance",
+                       "Hard"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "59m",
+        "durationRaw":  "00:59:00",
+        "bitrate":  "320 kbps",
+        "sizeMB":  135,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  111,
+        "code":  "SET 111",
+        "title":  "Trance \u0026 Uplifting",
+        "fileName":  "SET 111 - Felipe Signorelli Trance \u0026 Uplifting.mp3",
+        "genres":  [
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "57m",
+        "durationRaw":  "00:57:12",
+        "bitrate":  "320 kbps",
+        "sizeMB":  131,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  112,
+        "code":  "SET 112",
+        "title":  "House \u0026 Disco",
+        "fileName":  "SET 112 - Felipe Signorelli House \u0026 Disco.mp3",
+        "genres":  [
+                       "House \u0026 Deep"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "48m",
+        "durationRaw":  "00:48:05",
+        "bitrate":  "320 kbps",
+        "sizeMB":  110,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  113,
+        "code":  "SET 113",
+        "title":  "Uplifting \u0026 Who\u0027s \u0026 Hard",
+        "fileName":  "SET 113 - Felipe Signorelli Reis Uplifting \u0026 Who\u0027s \u0026 Hard.mp3",
+        "genres":  [
+                       "Uplifting Trance",
+                       "Hard"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "52m",
+        "durationRaw":  "00:52:42",
+        "bitrate":  "320 kbps",
+        "sizeMB":  121,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  114,
+        "code":  "SET 114",
+        "title":  "Uplifting Trance",
+        "fileName":  "SET 114 - Felipe Signorelli Uplifting Trance.mp3",
+        "genres":  [
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "54m",
+        "durationRaw":  "00:54:34",
+        "bitrate":  "320 kbps",
+        "sizeMB":  125,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  115,
+        "code":  "SET 115",
+        "title":  "Anjuna Progressive",
+        "fileName":  "SET 115 - Felipe Signorelli Anjuna_Progressive.mp3",
+        "genres":  [
+                       "Progressive"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "54m",
+        "durationRaw":  "00:54:00",
+        "bitrate":  "320 kbps",
+        "sizeMB":  124,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  116,
+        "code":  "SET 116",
+        "title":  "Trance \u0026 Uplifting",
+        "fileName":  "SET 116 - Felipe Signorelli Trance \u0026 Uplifting.mp3",
+        "genres":  [
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "54m",
+        "durationRaw":  "00:54:01",
+        "bitrate":  "320 kbps",
+        "sizeMB":  124,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  117,
+        "code":  "SET 117",
+        "title":  "Trance \u0026 Uplifting",
+        "fileName":  "SET 117 - Felipe Signorelli Trance \u0026 Uplifting.mp3",
+        "genres":  [
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "59m",
+        "durationRaw":  "00:59:19",
+        "bitrate":  "320 kbps",
+        "sizeMB":  136,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  118,
+        "code":  "SET 118",
+        "title":  "Uplifting",
+        "fileName":  "SET 118 - Felipe Signorelli Uplifting.mp3",
+        "genres":  [
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "48m",
+        "durationRaw":  "00:48:02",
+        "bitrate":  "320 kbps",
+        "sizeMB":  112,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  119,
+        "code":  "SET 119",
+        "title":  "Uplifting Trance",
+        "fileName":  "SET 119 - Felipe Signorelli Uplifting Trance.mp3",
+        "genres":  [
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "59m",
+        "durationRaw":  "00:59:29",
+        "bitrate":  "320 kbps",
+        "sizeMB":  138,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  121,
+        "code":  "SET 121",
+        "title":  "Psychedelic",
+        "fileName":  "SET 121 - Felipe Signorelli Psychedelic.mp3",
+        "genres":  [
+                       "Psytrance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 04m",
+        "durationRaw":  "01:04:29",
+        "bitrate":  "320 kbps",
+        "sizeMB":  148,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  122,
+        "code":  "SET 122",
+        "title":  "Uplifting Trance",
+        "fileName":  "SET 122 - Felipe Signorelli Uplifting Trance.mp3",
+        "genres":  [
+                       "Uplifting Trance"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "57m",
+        "durationRaw":  "00:57:36",
+        "bitrate":  "320 kbps",
+        "sizeMB":  140,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    },
+    {
+        "number":  123,
+        "code":  "SET 123",
+        "title":  "FullOn",
+        "fileName":  "SET 123 - Felipe Signorelli FullOn.mp3",
+        "genres":  [
+                       "Full On"
+                   ],
+        "tags":  [
+
+                 ],
+        "duration":  "1h 13m",
+        "durationRaw":  "01:13:08",
+        "bitrate":  "320 kbps",
+        "sizeMB":  173,
+        "fileId":  "",
+        "coverImage":  null,
+        "tracklist":  [
+
+                      ]
+    }
+]
