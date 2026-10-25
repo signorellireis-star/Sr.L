@@ -177,7 +177,7 @@
       // Botão de download no player
       const isLocalHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
       if (isLocalHost && set.fileName) {
-        this.downloadBtn.href = `/audio/${encodeURIComponent(set.fileName)}`;
+        this.downloadBtn.href = `/audio/${encodeURIComponent(set.fileName)}?dl=1`;
         this.downloadBtn.setAttribute('download', set.fileName);
         this.downloadBtn.removeAttribute('hidden');
       } else if (set.fileId) {

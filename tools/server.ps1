@@ -30,6 +30,10 @@ function Send-FileWithRange($req, $res, [string]$filePath, [string]$contentType)
 
   $res.ContentType = $contentType
   $res.AddHeader("Accept-Ranges", "bytes")
+  if ($req.QueryString["dl"] -eq "1") {
+    $safeName = [System.IO.Path]::GetFileName($filePath)
+    $res.AddHeader("Content-Disposition", "attachment; filename=`"$safeName`"")
+  }
 
   $rangeHeader = $req.Headers["Range"]
   $start = 0

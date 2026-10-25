@@ -402,7 +402,7 @@
       const isLocalHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
       let downloadHref = '#';
       if (isLocalHost && set.fileName) {
-        downloadHref = `/audio/${encodeURIComponent(set.fileName)}`;
+        downloadHref = `/audio/${encodeURIComponent(set.fileName)}?dl=1`;
       } else if (set.fileId) {
         downloadHref = `https://drive.usercontent.google.com/download?id=${set.fileId}&export=download&confirm=t`;
       }
@@ -527,7 +527,11 @@
         dlBtn.addEventListener('click', (e) => {
           const set = this.allSets.find(s => s.number === num);
           const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-          if (!isLocal && (!set || !set.fileId)) {
+          if (isLocal && set && set.fileName) {
+            this.showToast(`📥 Baixando ${set.code} (${set.title})...`);
+            return;
+          }
+          if (!set || !set.fileId) {
             e.preventDefault();
             this.showToast(`O link do Google Drive para o ${set ? set.code : 'SET'} será sincronizado.`);
           }
