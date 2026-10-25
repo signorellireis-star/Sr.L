@@ -398,10 +398,14 @@
         tracklistHtml = `<div class="tl-empty">✦ ${emptyText}</div>`;
       }
 
-      // Link direto do Google Drive (bypassa tela de vírus com confirm=t)
-      const downloadHref = set.fileId
-        ? `https://drive.usercontent.google.com/download?id=${set.fileId}&export=download&confirm=t`
-        : '#';
+      // Link de download: local ou Google Drive
+      const isLocalHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+      let downloadHref = '#';
+      if (isLocalHost && set.fileName) {
+        downloadHref = `/audio/${encodeURIComponent(set.fileName)}`;
+      } else if (set.fileId) {
+        downloadHref = `https://drive.usercontent.google.com/download?id=${set.fileId}&export=download&confirm=t`;
+      }
 
       return `
         <article class="card ${isCurrent ? 'is-playing' : ''} ${isPlaying ? 'is-active-playing' : ''}"
@@ -522,7 +526,8 @@
         const dlBtn = card.querySelector('.card__btn--dl');
         dlBtn.addEventListener('click', (e) => {
           const set = this.allSets.find(s => s.number === num);
-          if (!set || !set.fileId) {
+          const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+          if (!isLocal && (!set || !set.fileId)) {
             e.preventDefault();
             this.showToast(`O link do Google Drive para o ${set ? set.code : 'SET'} será sincronizado.`);
           }

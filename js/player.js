@@ -175,7 +175,12 @@
       this.coverEl.innerHTML = `<img src="${coverUri}" alt="${set.code}">`;
 
       // Botão de download no player
-      if (set.fileId) {
+      const isLocalHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+      if (isLocalHost && set.fileName) {
+        this.downloadBtn.href = `/audio/${encodeURIComponent(set.fileName)}`;
+        this.downloadBtn.setAttribute('download', set.fileName);
+        this.downloadBtn.removeAttribute('hidden');
+      } else if (set.fileId) {
         this.downloadBtn.href = `https://drive.usercontent.google.com/download?id=${set.fileId}&export=download&confirm=t`;
         this.downloadBtn.removeAttribute('hidden');
       } else {
@@ -193,7 +198,11 @@
       const apiKey = (window.SRL_CONFIG && window.SRL_CONFIG.googleApiKey) || '';
       let streamUrl = '';
 
-      if (set.streamUrl) {
+      const isLocalHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+      if (isLocalHost && set.fileName) {
+        // Modo preview local: toca o arquivo MP3 direto do seu computador com som real!
+        streamUrl = `/audio/${encodeURIComponent(set.fileName)}`;
+      } else if (set.streamUrl) {
         streamUrl = set.streamUrl;
       } else if (set.fileId && apiKey) {
         streamUrl = `https://www.googleapis.com/drive/v3/files/${set.fileId}?alt=media&key=${apiKey}`;
