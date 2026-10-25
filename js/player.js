@@ -194,18 +194,24 @@
       // Abre a barra do player
       this.open();
 
-      // Resolve a fonte de áudio
+      // Resolve a fonte de áudio direta da nuvem
       const apiKey = (window.SRL_CONFIG && window.SRL_CONFIG.googleApiKey) || '';
       let streamUrl = '';
 
-      const isLocalHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-      if (isLocalHost && set.fileName) {
-        // Modo preview local: toca o arquivo MP3 direto do seu computador com som real!
-        streamUrl = `/audio/${encodeURIComponent(set.fileName)}`;
-      } else if (set.streamUrl) {
+      if (set.streamUrl) {
         streamUrl = set.streamUrl;
-      } else if (set.fileId && apiKey) {
-        streamUrl = `https://www.googleapis.com/drive/v3/files/${set.fileId}?alt=media&key=${apiKey}`;
+      } else if (set.fileId) {
+        // Stream direto do Google Drive na nuvem (alta velocidade, sem tela de vírus, toca nativamente no player)
+        if (apiKey) {
+          streamUrl = `https://www.googleapis.com/drive/v3/files/${set.fileId}?alt=media&key=${apiKey}`;
+        } else {
+          streamUrl = `https://drive.usercontent.google.com/download?id=${set.fileId}&export=download&confirm=t`;
+        }
+      } else {
+        const isLocalHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        if (isLocalHost && set.fileName) {
+          streamUrl = `/audio/${encodeURIComponent(set.fileName)}`;
+        }
       }
 
       // Limpa embed anterior se houver
