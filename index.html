@@ -17,9 +17,11 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://drive.google.com">
+  <link rel="preconnect" href="https://docs.google.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="assets/hero/hero-club.jpg">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=3.1">
 </head>
 <body>
   <!-- ============ NAV ============ -->
@@ -133,7 +135,20 @@
             </select>
           </div>
         </div>
-        <div class="chips" id="genre-chips" role="group" aria-label="Filtrar por estilo"></div>
+        <div class="chips-container" id="chips-container">
+          <button class="chips-arrow chips-arrow--prev" id="chips-prev" type="button" aria-label="Estilos anteriores" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <div class="chips-track" id="chips-track">
+            <div class="chips" id="genre-chips" role="group" aria-label="Filtrar por estilo"></div>
+          </div>
+          <button class="chips-arrow chips-arrow--next" id="chips-next" type="button" aria-label="Próximos estilos">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+          <button class="chips-toggle" id="chips-toggle" type="button" aria-label="Expandir todos os estilos" title="Ver todos os estilos">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+        </div>
       </div>
 
       <p class="archive__count" id="results-count" aria-live="polite"></p>
@@ -207,9 +222,9 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="js/config.js?v=3.0"></script>
-  <script src="js/covers.js?v=3.0"></script>
-  <script src="js/player.js?v=3.0"></script>
-  <script src="js/app.js?v=3.0"></script>
+  <script src="js/config.js?v=3.1"></script>
+  <script src="js/covers.js?v=3.1"></script>
+  <script src="js/player.js?v=3.1"></script>
+  <script src="js/app.js?v=3.1"></script>
 </body>
 </html>

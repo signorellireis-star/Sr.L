@@ -176,16 +176,36 @@
   }
 
   /**
+   * Escapa caracteres especiais para SVG/XML válido
+   */
+  function escapeXML(str) {
+    if (str == null) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&apos;');
+  }
+
+  /**
    * Gera o SVG da capa em formato string
    */
   function generateCoverSVG(set) {
+    if (!set) set = {};
     const num = set.number || 1;
-    const code = set.code || `SET ${String(num).padStart(2, '0')}`;
-    const title = (set.title || 'Selected Mix').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const rawCode = set.code || `SET ${String(num).padStart(2, '0')}`;
+    const code = escapeXML(rawCode);
+
+    const rawTitle = set.title || 'Selected Mix';
+    const shortTitle = rawTitle.length > 28 ? rawTitle.substring(0, 26) + '…' : rawTitle;
+    const title = escapeXML(shortTitle);
+
     const theme = getTheme(set.genres);
     const { c1, c2, c3, glow, pattern, genreName } = theme;
-    const dur = set.duration || 'Electronic Set';
-    const bitrate = set.bitrate || '320 kbps';
+    const safeGenre = escapeXML(genreName || 'Electronic');
+    const dur = escapeXML(set.duration || 'Electronic Set');
+    const bitrate = escapeXML(set.bitrate || '320 kbps');
 
     const patternElements = generatePatternSVG(pattern, num, c1, c2, c3);
 
@@ -262,7 +282,7 @@
       Sr<tspan fill="${c1}">.</tspan>L
     </text>
     <text x="0" y="20" font-family="'Inter', sans-serif" font-weight="600" font-size="10" fill="${c1}" letter-spacing="3" text-transform="uppercase">
-      ${genreName}
+      ${safeGenre}
     </text>
 
     <!-- Badge de Bitrate à direita -->
@@ -293,7 +313,7 @@
     <rect x="0" y="-32" width="516" height="2" fill="url(#glow-grad-${num})" opacity="0.6"/>
 
     <text x="0" y="-8" font-family="'Syne', sans-serif" font-weight="700" font-size="22" fill="#ffffff">
-      ${title.length > 28 ? title.substring(0, 26) + '…' : title}
+      ${title}
     </text>
     <text x="0" y="16" font-family="'Inter', sans-serif" font-weight="500" font-size="13" fill="#9aa3b8">
       Sr.L <tspan fill="${c1}">·</tspan> ${dur}
@@ -309,7 +329,7 @@
    */
   function getCoverDataUri(set) {
     const svg = generateCoverSVG(set);
-    return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+    return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
   }
 
   window.SrLCover = {

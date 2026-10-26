@@ -127,8 +127,18 @@
         }
       });
 
-      // Redimensionamento do canvas
-      window.addEventListener('resize', () => this.renderWave());
+      // Redimensionamento do canvas e ajuste dinâmico de altura do player
+      window.addEventListener('resize', () => {
+        this.renderWave();
+        this.updateDimensions();
+      });
+
+      if (window.ResizeObserver && this.playerEl) {
+        try {
+          const ro = new ResizeObserver(() => this.updateDimensions());
+          ro.observe(this.playerEl);
+        } catch (e) {}
+      }
     }
 
     initWaveCanvas() {
@@ -168,11 +178,11 @@
       this.titleEl.textContent = `${set.code} — ${set.title}`;
       this.subEl.textContent = `${set.genres ? set.genres.join(' · ') : 'Electronic'} | ${set.duration || ''}`;
 
-      // Capa procedural
-      const theme = window.SrLCover.getTheme(set.genres);
+      // Capa procedural com fallback automático
+      const theme = window.SrLCover ? window.SrLCover.getTheme(set.genres) : { c1: '#22e4ff' };
       this.playerEl.style.setProperty('--c', theme.c1);
-      const coverUri = set.coverImage || window.SrLCover.getDataUri(set);
-      this.coverEl.innerHTML = `<img src="${coverUri}" alt="${set.code}">`;
+      const coverUri = set.coverImage || (window.SrLCover ? window.SrLCover.getDataUri(set) : '');
+      this.coverEl.innerHTML = `<img src="${coverUri}" alt="${set.code}" onerror="this.onerror=null; if(window.SrLCover){this.src=window.SrLCover.getDataUri(window.SrLApp ? window.SrLApp.getSetByNumber(${set.number}) : null);}">`;
 
       // Botão de download no player
       const isLocalHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
@@ -194,24 +204,18 @@
       // Abre a barra do player
       this.open();
 
-      // Resolve a fonte de áudio direta da nuvem
+      // Resolve a melhor fonte de áudio
       const apiKey = (window.SRL_CONFIG && window.SRL_CONFIG.googleApiKey) || '';
       let streamUrl = '';
 
       if (set.streamUrl) {
         streamUrl = set.streamUrl;
-      } else if (set.fileId) {
-        // Stream direto do Google Drive na nuvem (alta velocidade, sem tela de vírus, toca nativamente no player)
-        if (apiKey) {
-          streamUrl = `https://www.googleapis.com/drive/v3/files/${set.fileId}?alt=media&key=${apiKey}`;
-        } else {
-          streamUrl = `https://drive.usercontent.google.com/download?id=${set.fileId}&export=download&confirm=t`;
-        }
-      } else {
-        const isLocalHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-        if (isLocalHost && set.fileName) {
-          streamUrl = `/audio/${encodeURIComponent(set.fileName)}`;
-        }
+      } else if (isLocalHost && set.fileName) {
+        // Prioridade 1: Servidor Local (alta velocidade instantânea 0s, streaming nativo com onda sonora)
+        streamUrl = `/audio/${encodeURIComponent(set.fileName)}`;
+      } else if (apiKey && set.fileId) {
+        // Prioridade 2: Google Drive API v3 autorizada (alta velocidade com onda sonora no GitHub Pages)
+        streamUrl = `https://www.googleapis.com/drive/v3/files/${set.fileId}?alt=media&key=${apiKey}`;
       }
 
       // Limpa embed anterior se houver
@@ -232,49 +236,61 @@
           });
         }
       } else {
-        // Caso ainda não tenha API key configurada ou não tenha fileId
+        // Sem streamUrl direto: ativa player embutido do Google Drive imediatamente (sem delay de 5s de erro)
         this.handlePendingAudio(set);
       }
+
+      // Atualiza altura do player na página
+      this.updateDimensions();
 
       // Notifica todos os cards da grade
       this.broadcastSetChange(set);
     }
 
     handlePendingAudio(set) {
-      // Notificação amigável e elegante
       if (set.fileId) {
-        // Se já tem fileId do Drive, mas sem chave API, embed do Drive é acionado
+        // Player embutido do Google Drive
         this.playerEl.classList.add('is-embed');
         this.embedEl.hidden = false;
         this.embedEl.innerHTML = `
-          <iframe src="https://drive.google.com/file/d/${set.fileId}/preview" allow="autoplay" title="${set.title}"></iframe>
+          <iframe src="https://drive.google.com/file/d/${set.fileId}/preview" allow="autoplay" loading="eager" title="${set.title}"></iframe>
         `;
+        this.updateDimensions();
         if (window.SrLApp) {
-          window.SrLApp.showToast(`Tocando via Google Drive Preview · ${set.code}`);
+          window.SrLApp.showToast(`Tocando via Google Drive · ${set.code}`);
         }
       } else {
-        // Sem fileId vinculado ainda (modo catálogo local antes da sincronização do Drive)
         if (window.SrLApp) {
-          window.SrLApp.showToast(`🎵 ${set.code}: Pronto para reprodução após vincular os links do Google Drive.`);
+          window.SrLApp.showToast(`🎵 ${set.code}: Pronto para reprodução.`);
         }
-        // Simulação visual para o usuário sentir o player e os controles
         this.durationEl.textContent = set.duration || '54:00';
         this.currentEl.textContent = '0:00';
       }
     }
 
     handleAudioError() {
-      if (this.currentSet && this.currentSet.fileId) {
-        // Fallback automático para o preview do Drive se a API rejeitar
+      if (this.currentSet && this.currentSet.fileId && !this.playerEl.classList.contains('is-embed')) {
         this.playerEl.classList.add('is-embed');
         this.embedEl.hidden = false;
         this.embedEl.innerHTML = `
-          <iframe src="https://drive.google.com/file/d/${this.currentSet.fileId}/preview" allow="autoplay" title="${this.currentSet.title}"></iframe>
+          <iframe src="https://drive.google.com/file/d/${this.currentSet.fileId}/preview" allow="autoplay" loading="eager" title="${this.currentSet.title}"></iframe>
         `;
+        this.updateDimensions();
         if (window.SrLApp) {
           window.SrLApp.showToast(`Alternando para player embutido do Google Drive...`);
         }
       }
+    }
+
+    updateDimensions() {
+      if (!this.playerEl || this.playerEl.hasAttribute('hidden') || !this.playerEl.classList.contains('is-open')) {
+        document.body.style.setProperty('--player-h', '0px');
+        return;
+      }
+      requestAnimationFrame(() => {
+        const h = this.playerEl.offsetHeight || (this.playerEl.classList.contains('is-embed') ? 165 : 96);
+        document.body.style.setProperty('--player-h', `${h}px`);
+      });
     }
 
     togglePlay() {
@@ -442,17 +458,20 @@
     open() {
       this.playerEl.removeAttribute('hidden');
       this.playerEl.classList.add('is-open');
-      document.body.style.setProperty('--player-h', '96px');
+      this.updateDimensions();
     }
 
     close() {
       this.audio.pause();
+      this.audio.src = '';
       this.isPlaying = false;
+      this.isLoading = false;
       this.updatePlayState();
       this.playerEl.classList.remove('is-open');
-      document.body.style.setProperty('--player-h', '0px');
+      this.playerEl.classList.remove('is-embed');
       this.embedEl.innerHTML = '';
       this.embedEl.hidden = true;
+      document.body.style.setProperty('--player-h', '0px');
     }
 
     broadcastSetChange(set) {

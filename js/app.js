@@ -16,12 +16,26 @@
     init() {
       this.initElements();
       this.initPlayer();
+      this.initChipsNavigation();
       this.initScrollEffects();
       this.initMorphObserver();
       this.initMarquee();
       this.initSocials();
       this.initKeyboardShortcuts();
       this.loadData();
+    },
+
+    getSetByNumber(num) {
+      return this.allSets.find(s => s.number === num);
+    },
+
+    handleCoverError(img, num) {
+      if (!img) return;
+      img.onerror = null;
+      const set = this.getSetByNumber(num);
+      if (set && window.SrLCover) {
+        img.src = window.SrLCover.getDataUri(set);
+      }
     },
 
     initElements() {
@@ -264,6 +278,112 @@
       requestAnimationFrame(tick);
     },
 
+    initChipsNavigation() {
+      const container = document.getElementById('chips-container');
+      const track = document.getElementById('chips-track');
+      const chips = document.getElementById('genre-chips');
+      const prevBtn = document.getElementById('chips-prev');
+      const nextBtn = document.getElementById('chips-next');
+      const toggleBtn = document.getElementById('chips-toggle');
+
+      if (!chips || !prevBtn || !nextBtn) return;
+
+      const updateArrows = () => {
+        if (!chips) return;
+        const maxScroll = chips.scrollWidth - chips.clientWidth;
+        const sl = chips.scrollLeft;
+
+        if (track) {
+          if (sl > 6) {
+            track.classList.add('can-scroll-left');
+          } else {
+            track.classList.remove('can-scroll-left');
+          }
+
+          if (sl >= maxScroll - 6 || maxScroll <= 0) {
+            track.classList.add('no-scroll-right');
+          } else {
+            track.classList.remove('no-scroll-right');
+          }
+        }
+
+        prevBtn.hidden = sl <= 6;
+        nextBtn.hidden = sl >= maxScroll - 6 || maxScroll <= 0;
+      };
+
+      prevBtn.addEventListener('click', () => {
+        chips.scrollBy({ left: -260, behavior: 'smooth' });
+      });
+
+      nextBtn.addEventListener('click', () => {
+        chips.scrollBy({ left: 260, behavior: 'smooth' });
+      });
+
+      if (toggleBtn && container) {
+        toggleBtn.addEventListener('click', () => {
+          const isExp = container.classList.toggle('is-expanded');
+          toggleBtn.setAttribute('aria-expanded', isExp);
+          toggleBtn.title = isExp ? 'Recolher estilos' : 'Ver todos os estilos';
+          updateArrows();
+        });
+      }
+
+      // Suporte a rolagem com roda do mouse (wheel)
+      chips.addEventListener('wheel', (e) => {
+        if (container.classList.contains('is-expanded')) return;
+        if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+          e.preventDefault();
+          chips.scrollLeft += e.deltaY;
+          updateArrows();
+        }
+      }, { passive: false });
+
+      // Suporte a arrastar com o mouse (click & drag swipe)
+      let isDown = false;
+      let startX = 0;
+      let scrollLeftStart = 0;
+      let hasDragged = false;
+
+      chips.addEventListener('mousedown', (e) => {
+        if (container.classList.contains('is-expanded')) return;
+        isDown = true;
+        hasDragged = false;
+        chips.classList.add('is-dragging');
+        startX = e.pageX - chips.offsetLeft;
+        scrollLeftStart = chips.scrollLeft;
+      });
+
+      window.addEventListener('mouseup', () => {
+        if (!isDown) return;
+        isDown = false;
+        chips.classList.remove('is-dragging');
+      });
+
+      chips.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - chips.offsetLeft;
+        const walk = (x - startX) * 1.4;
+        chips.scrollLeft = scrollLeftStart - walk;
+        if (Math.abs(walk) > 4) hasDragged = true;
+        updateArrows();
+      });
+
+      chips.addEventListener('click', (e) => {
+        if (hasDragged) {
+          e.stopImmediatePropagation();
+          e.preventDefault();
+          hasDragged = false;
+        }
+      }, true);
+
+      chips.addEventListener('scroll', updateArrows, { passive: true });
+      window.addEventListener('resize', updateArrows);
+
+      this.updateChipsArrows = updateArrows;
+      setTimeout(updateArrows, 150);
+    },
+
     buildGenreChips() {
       const counts = {};
       this.allSets.forEach(s => {
@@ -300,6 +420,10 @@
           this.applyFilters();
         });
       });
+
+      if (this.updateChipsArrows) {
+        setTimeout(this.updateChipsArrows, 100);
+      }
     },
 
     updateActiveChip() {
@@ -414,7 +538,7 @@
                  style="--c:${theme.c1}; --d:${Math.min(idx, 24)}">
           
           <div class="card__cover">
-            <img src="${coverUri}" alt="${set.code} - ${set.title}" loading="lazy" width="300" height="300">
+            <img src="${coverUri}" alt="${set.code}" loading="lazy" width="300" height="300" onerror="window.SrLApp &amp;&amp; window.SrLApp.handleCoverError(this, ${set.number})">
             <span class="card__badge">${set.code}</span>
             <span class="card__dur">
               <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
