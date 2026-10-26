@@ -15,6 +15,8 @@
 
     init() {
       this.initElements();
+      this.initViewMode();
+      this.initMobileBar();
       this.initPlayer();
       this.initChipsNavigation();
       this.initScrollEffects();
@@ -81,6 +83,95 @@
       if (this.navShuffleBtn) this.navShuffleBtn.addEventListener('click', handleRandom);
     },
 
+    initViewMode() {
+      const viewGridBtn = document.getElementById('view-grid');
+      const viewListBtn = document.getElementById('view-list');
+      if (!viewGridBtn || !viewListBtn || !this.gridEl) return;
+
+      const setViewMode = (mode) => {
+        if (mode === 'list') {
+          this.gridEl.classList.add('is-list-view');
+          viewListBtn.classList.add('is-active');
+          viewGridBtn.classList.remove('is-active');
+        } else {
+          this.gridEl.classList.remove('is-list-view');
+          viewGridBtn.classList.add('is-active');
+          viewListBtn.classList.remove('is-active');
+        }
+        try {
+          localStorage.setItem('srl_view_mode', mode);
+        } catch (e) {}
+      };
+
+      let savedMode = 'grid';
+      try {
+        savedMode = localStorage.getItem('srl_view_mode') || 'grid';
+      } catch (e) {}
+      setViewMode(savedMode);
+
+      viewGridBtn.addEventListener('click', () => setViewMode('grid'));
+      viewListBtn.addEventListener('click', () => setViewMode('list'));
+    },
+
+    initMobileBar() {
+      const mobileBar = document.getElementById('mobile-bar');
+      if (!mobileBar) return;
+
+      const mHome = document.getElementById('m-btn-home');
+      const mAcervo = document.getElementById('m-btn-acervo');
+      const mSearch = document.getElementById('m-btn-search');
+      const mShuffle = document.getElementById('m-btn-shuffle');
+      const mSobre = document.getElementById('m-btn-sobre');
+
+      if (mSearch) {
+        mSearch.addEventListener('click', () => {
+          const toolbar = document.getElementById('toolbar');
+          if (toolbar) toolbar.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          setTimeout(() => {
+            if (this.searchInput) {
+              this.searchInput.focus();
+              this.searchInput.select();
+            }
+          }, 350);
+        });
+      }
+
+      if (mShuffle) {
+        mShuffle.addEventListener('click', () => {
+          this.playRandomSet();
+        });
+      }
+
+      const updateActiveNav = () => {
+        const scrollY = window.scrollY;
+        const winH = window.innerHeight;
+        const sobreEl = document.getElementById('sobre');
+        const acervoEl = document.getElementById('acervo');
+
+        let current = 'home';
+        if (sobreEl && scrollY + winH * 0.4 >= sobreEl.offsetTop) {
+          current = 'sobre';
+        } else if (acervoEl && scrollY + winH * 0.4 >= acervoEl.offsetTop) {
+          current = 'acervo';
+        }
+
+        if (mHome) mHome.classList.toggle('is-active', current === 'home');
+        if (mAcervo) mAcervo.classList.toggle('is-active', current === 'acervo');
+        if (mSobre) mSobre.classList.toggle('is-active', current === 'sobre');
+      };
+
+      let navTicking = false;
+      window.addEventListener('scroll', () => {
+        if (!navTicking) {
+          requestAnimationFrame(() => {
+            updateActiveNav();
+            navTicking = false;
+          });
+          navTicking = true;
+        }
+      }, { passive: true });
+    },
+
     initPlayer() {
       if (window.SrLPlayer) {
         this.player = new window.SrLPlayer();
@@ -89,12 +180,13 @@
 
     initScrollEffects() {
       let lastY = 0;
+      let ticking = false;
+
       const updateScroll = () => {
         const y = window.scrollY;
         const heroH = this.heroEl ? this.heroEl.offsetHeight : window.innerHeight;
         const p = Math.max(0, Math.min(1.5, y / heroH));
 
-        // Parallax + blur na hero
         if (this.heroEl) {
           this.heroEl.style.setProperty('--p', p.toFixed(4));
         }
@@ -116,19 +208,25 @@
         }
         lastY = y;
 
-        // Sticky toolbar borda
+        // Sticky toolbar borda (sem layout thrashing / getBoundingClientRect)
         const toolbar = document.getElementById('toolbar');
         if (toolbar) {
-          const rect = toolbar.getBoundingClientRect();
-          if (rect.top <= 70) {
+          if (y > 450) {
             toolbar.classList.add('is-stuck');
           } else {
             toolbar.classList.remove('is-stuck');
           }
         }
+
+        ticking = false;
       };
 
-      window.addEventListener('scroll', updateScroll, { passive: true });
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          requestAnimationFrame(updateScroll);
+          ticking = true;
+        }
+      }, { passive: true });
       updateScroll();
 
       // Intersection Observer para elementos .reveal
@@ -139,7 +237,7 @@
             revealObserver.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.15 });
+      }, { threshold: 0.1 });
 
       document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     },
@@ -600,27 +698,33 @@
     },
 
     attachCardEvents() {
-      // 3D Tilt suave ao passar o cursor no card
+      // 3D Tilt suave otimizado (apenas em desktop com mouse de alta precisão)
+      const canHover = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
       this.gridEl.querySelectorAll('.card').forEach(card => {
-        card.addEventListener('mousemove', (e) => {
-          const rect = card.getBoundingClientRect();
-          const x = e.clientX - rect.left;
-          const y = e.clientY - rect.top;
-          const px = (x / rect.width) * 100;
-          const py = (y / rect.height) * 100;
-          const rx = -((y - rect.height / 2) / (rect.height / 2)) * 6;
-          const ry = ((x - rect.width / 2) / (rect.width / 2)) * 6;
+        if (canHover) {
+          let rect = null;
+          card.addEventListener('mouseenter', () => {
+            rect = card.getBoundingClientRect();
+          });
 
-          card.style.setProperty('--mx', `${px.toFixed(1)}%`);
-          card.style.setProperty('--my', `${py.toFixed(1)}%`);
-          card.style.setProperty('--rx', `${rx.toFixed(2)}deg`);
-          card.style.setProperty('--ry', `${ry.toFixed(2)}deg`);
-        });
+          card.addEventListener('mousemove', (e) => {
+            if (!rect) rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const rx = -((y - rect.height / 2) / (rect.height / 2)) * 5;
+            const ry = ((x - rect.width / 2) / (rect.width / 2)) * 5;
 
-        card.addEventListener('mouseleave', () => {
-          card.style.setProperty('--rx', '0deg');
-          card.style.setProperty('--ry', '0deg');
-        });
+            card.style.setProperty('--rx', `${rx.toFixed(2)}deg`);
+            card.style.setProperty('--ry', `${ry.toFixed(2)}deg`);
+          });
+
+          card.addEventListener('mouseleave', () => {
+            rect = null;
+            card.style.setProperty('--rx', '0deg');
+            card.style.setProperty('--ry', '0deg');
+          });
+        }
 
         // Botão Play no card
         const playBtn = card.querySelector('.card__play');

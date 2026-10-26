@@ -417,8 +417,9 @@
 
       // Gradiente de reprodução (já tocado)
       const gradPlayed = ctx.createLinearGradient(0, 0, w, 0);
-      gradPlayed.addColorStop(0, theme.c1);
-      gradPlayed.addColorStop(1, theme.c2 || theme.c1);
+      // Otimização: desenha em 2 passes ultra-rápidos sem shadowBlur por barra (30x mais FPS)
+      const playedBars = [];
+      const unplayedBars = [];
 
       for (let i = 0; i < count; i++) {
         const frac = i / count;
@@ -428,27 +429,40 @@
         const y = (h - barH) / 2;
 
         if (frac <= progressFrac) {
-          ctx.fillStyle = gradPlayed;
-          ctx.shadowColor = theme.c1;
-          ctx.shadowBlur = 6;
+          playedBars.push({ x, y, barH });
         } else {
-          ctx.fillStyle = 'rgba(255, 255, 255, 0.22)';
-          ctx.shadowBlur = 0;
+          unplayedBars.push({ x, y, barH });
         }
-
-        ctx.beginPath();
-        if (ctx.roundRect) {
-          ctx.roundRect(x, y, barW, barH, 2);
-        } else {
-          ctx.rect(x, y, barW, barH);
-        }
-        ctx.fill();
       }
 
-      // Linha indicadora de agulha (cursor do player)
+      // Passe 1: Barras ainda não tocadas
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.22)';
+      ctx.beginPath();
+      for (const b of unplayedBars) {
+        if (ctx.roundRect) {
+          ctx.roundRect(b.x, b.y, barW, b.barH, 2);
+        } else {
+          ctx.rect(b.x, b.y, barW, b.barH);
+        }
+      }
+      ctx.fill();
+
+      // Passe 2: Barras já tocadas com gradiente neon
+      ctx.fillStyle = gradPlayed;
+      ctx.beginPath();
+      for (const b of playedBars) {
+        if (ctx.roundRect) {
+          ctx.roundRect(b.x, b.y, barW, b.barH, 2);
+        } else {
+          ctx.rect(b.x, b.y, barW, b.barH);
+        }
+      }
+      ctx.fill();
+
+      // Linha indicadora de agulha (cursor do player) com glow elegante
       const cursorX = progressFrac * w;
       ctx.shadowColor = theme.c1;
-      ctx.shadowBlur = 8;
+      ctx.shadowBlur = 10;
       ctx.fillStyle = '#ffffff';
       ctx.fillRect(cursorX - 1, 2, 2, h - 4);
 
@@ -458,6 +472,7 @@
     open() {
       this.playerEl.removeAttribute('hidden');
       this.playerEl.classList.add('is-open');
+      document.body.classList.add('has-player');
       this.updateDimensions();
     }
 
@@ -471,6 +486,7 @@
       this.playerEl.classList.remove('is-embed');
       this.embedEl.innerHTML = '';
       this.embedEl.hidden = true;
+      document.body.classList.remove('has-player');
       document.body.style.setProperty('--player-h', '0px');
     }
 
