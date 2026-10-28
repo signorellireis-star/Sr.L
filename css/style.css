@@ -546,7 +546,7 @@ body.nav-hidden .toolbar { top: 0; }
 .player__embed { padding: 0.2rem clamp(0.8rem, 3vw, 2rem) 0.75rem; }
 .player__embed iframe {
   width: 100%;
-  height: 96px;
+  height: 142px;
   border: 1px solid var(--border);
   border-radius: 12px;
   background: #0c0d14;
@@ -944,6 +944,12 @@ body.nav-hidden .toolbar { top: 0; }
   }
   .player__right #player-download {
     display: none;
+  }
+  .player__embed {
+    padding: 0.15rem 0.5rem 0.5rem;
+  }
+  .player__embed iframe {
+    height: 142px;
   }
 }
 

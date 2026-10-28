@@ -288,7 +288,7 @@
         return;
       }
       requestAnimationFrame(() => {
-        const h = this.playerEl.offsetHeight || (this.playerEl.classList.contains('is-embed') ? 165 : 96);
+        const h = this.playerEl.offsetHeight || (this.playerEl.classList.contains('is-embed') ? 215 : 96);
         document.body.style.setProperty('--player-h', `${h}px`);
       });
     }

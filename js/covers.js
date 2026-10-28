@@ -40,6 +40,10 @@
       c1: '#ff8a00', c2: '#e52e71', c3: '#fca311',
       glow: 'rgba(255, 138, 0, 0.55)', pattern: 'rings'
     },
+    'Beach': {
+      c1: '#ff7a18', c2: '#ff2e93', c3: '#00f0ff',
+      glow: 'rgba(255, 122, 24, 0.65)', pattern: 'waves'
+    },
     'Hard': {
       c1: '#ff003c', c2: '#7f00ff', c3: '#fcee0a',
       glow: 'rgba(255, 0, 60, 0.7)', pattern: 'lasers'

@@ -142,7 +142,8 @@ function Get-Genres([string]$label) {
     "Tech Trance"      = "tech[\s-]?trance|khomha"
     "Progressive"      = "progressive|prog|anjuna"
     "Electro House"    = "electro"
-    "House & Deep"     = "deep|house|disco|beach"
+    "Beach"            = "beach"
+    "House & Deep"     = "deep|house|disco"
     "Minimal"          = "minimal"
     "Underground"      = "underground"
     "Hard"             = "\bhard\b"
@@ -161,6 +162,7 @@ function Get-Genres([string]$label) {
   $hasSubTrance = $found | Where-Object { $_.g -in @("Psytrance", "Uplifting Trance", "Tech Trance") }
   if ($trance.Success -and -not $hasSubTrance) { $found += [pscustomobject]@{ g = "Trance"; i = $trance.Index } }
   if ($l -match "warm|tribute|bonus|gostoso|vs" -and -not $found) { $found += [pscustomobject]@{ g = "Trance"; i = 999 } }
+  if ($label -match "SET\s*45\b") { return @("Trance") }
   if (-not $found) { return @("Mix") }
   return @($found | Sort-Object i | ForEach-Object { $_.g } | Select-Object -Unique)
 }

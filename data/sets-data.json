@@ -929,10 +929,10 @@
     {
         "number":  45,
         "code":  "SET 45",
-        "title":  "Selected Mix",
+        "title":  "Trance",
         "fileName":  "SET 45 - Felipe Signorelli.mp3",
         "genres":  [
-                       "Mix"
+                       "Trance"
                    ],
         "tags":  [
 
@@ -1480,7 +1480,7 @@
         "title":  "Beach Vol1",
         "fileName":  "SET 71 - Felipe Signorelli Beach Vol1.mp3",
         "genres":  [
-                       "House \u0026 Deep"
+                       "Beach"
                    ],
         "tags":  [
                      "Beach"
@@ -1711,7 +1711,7 @@
         "title":  "Beach Vol 2",
         "fileName":  "SET 82 - Felipe Signorelli Beach Vol 2.mp3",
         "genres":  [
-                       "House \u0026 Deep"
+                       "Beach"
                    ],
         "tags":  [
                      "Beach"
